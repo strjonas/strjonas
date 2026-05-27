@@ -19,16 +19,15 @@ jobs:
           user: strjonas
           filename: github-metrics.svg
           template: classic
-          base: header
+          base: ""
           config_timezone: Europe/Berlin
-          config_order: base.header, isocalendar, languages
+          config_order: languages
 
-          # Tenure: full-year 3D contribution calendar
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-
-          # Range: most-used languages (not volume-based)
+          # Range, not volume: deep per-repo language analysis (real proportions)
           plugin_languages: yes
+          plugin_languages_indepth: yes
           plugin_languages_limit: 8
-          plugin_languages_details: percentage
+          plugin_languages_details: percentage, bytes-size
           plugin_languages_sections: most-used
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout_repositories: 15
