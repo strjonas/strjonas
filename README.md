@@ -6,4 +6,4 @@ Currently studying philosophy at Sankt Georgen and working as a data analyst at 
 
 Long-term, I want to help build toward a future where more people get to spend their time on work that's meaningful to them.
 
-![Metrics](./github-metrics.svg)
+![Most used languages](./languages.svg)
